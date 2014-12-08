@@ -9,7 +9,6 @@
             <p>
                 <?php
                 echo '<span id="underline">'.$this->lireDonnee('infoPerso')->getLogin().'</span><br />';
-                echo '<span id="underline">'.$this->lireDonnee('infoPerso')->getMdp().'</span><br />';
                 echo '<span id="underline">'.$this->lireDonnee('infoPerso')->getMail().'</span><br />';
                 ?>
             </p>
