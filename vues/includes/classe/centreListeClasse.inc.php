@@ -3,9 +3,9 @@
 $ListeClasse = $this->lireDonnee('lesClasses');
 echo "<div id='titreSection'><h1>".$this->lireDonnee('titreSection')."</h1></div>";
 ?>
-    <fieldset>
+    <fieldset id="fieldsetTab">
         <legend>Liste des Classes</legend>
-        <table border='1'>
+        <table id="tab" border='1'>
             <tr>
                 <th>Nom</th>
                 <th>Désignation</th>

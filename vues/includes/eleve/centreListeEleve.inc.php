@@ -3,7 +3,7 @@
 $ListeEleve = $this->lireDonnee('listeEleve');
 echo "<div id='titreSection'><h1>".$this->lireDonnee('titreSection')."</h1></div>";
 ?>
-    <fieldset>
+    <fieldset id="fieldsetTab">
         <legend>Liste des Elèves</legend>
         <table id="tab" border='1'>
             <tr>

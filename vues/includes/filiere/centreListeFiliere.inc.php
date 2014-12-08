@@ -3,7 +3,7 @@
 $ListeFilieres = $this->lireDonnee('lesFiliere');
 echo "<div id='titreSection'><h1>".$this->lireDonnee('titreSection')."</h1></div>";
 ?>
-    <fieldset>
+    <fieldset id="fieldsetTab">
         <legend>Liste des Filières</legend>
         <table id="tab" border='1'>
             <tr>
