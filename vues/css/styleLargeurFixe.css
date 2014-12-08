@@ -235,3 +235,14 @@ form{
     padding: 20px;
 }
 
+.bouton_menu{
+    margin-top:4px;
+    padding-top:2px;
+    border: solid 3px #008080;
+    background-color: #87CEEB;
+    text-align: center;
+}
+
+.bouton_menu a:hover{
+    color:white;
+}
