@@ -19,6 +19,7 @@ class C_Enseignant extends C_ControleurGenerique {
         $this->vue->ecrireDonnee('centre',"../vues/includes/enseignant/centreListeEnseignant.inc.php");
         // les données
         $this->vue->ecrireDonnee('titreVue',"MARGO : Enseignants");
+        $this->vue->ecrireDonnee("titreSection","Liste des enseignants");
         $this->vue->ecrireDonnee('loginAuthentification',MaSession::get('login'));
         
         $daoPers = new M_DaoPersonne();

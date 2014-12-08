@@ -1,6 +1,7 @@
 <?php 
 
 $ListeEnseignant = $this->lireDonnee('listeEnseignant');
+echo "<div id='titreSection'><h1>".$this->lireDonnee('titreSection')."</h1></div>";
 ?>
     <fieldset>
         <legend>Liste des Enseignants</legend>
