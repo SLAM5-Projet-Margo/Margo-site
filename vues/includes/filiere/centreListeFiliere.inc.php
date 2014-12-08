@@ -5,7 +5,7 @@ echo "<div id='titreSection'><h1>".$this->lireDonnee('titreSection')."</h1></div
 ?>
     <fieldset>
         <legend>Liste des Filières</legend>
-        <table border='1'>
+        <table id="tab" border='1'>
             <tr>
                 <th>Numéro</th>
                 <th>Libellé</th>

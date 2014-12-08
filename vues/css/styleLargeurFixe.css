@@ -182,6 +182,9 @@ fieldset{
     border: solid 2px #282828;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    width: 50%;
+    padding: 20px;
+    margin : 0 auto 
     
 }
 
@@ -247,16 +250,12 @@ form{
     color:white;
 }
 
-#tabProf{
+#tab {
+    border: medium solid #6495ed;
+    border-collapse: collapse;
     width: 600px;
     padding: 20px;
     margin : 0 auto 
-}
-
-tabProf {
-    border: medium solid #6495ed;
-    border-collapse: collapse;
-    width: 50%;
 }
 th {
     font-family: monospace;
