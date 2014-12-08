@@ -7,7 +7,7 @@
         ?>
         <span class="myAccount" >
             <a href=".?controleur=gestionDeCompte&action=informationsMonCompte">
-                <img src="../vues/images/info-2-32.png" style="width:32px; height:32px;" alt="" />Mon Compte
+                <img src="../vues/images/info-32.png" style="width:32px; height:32px;" alt="" />Mon Compte
             </a>
         </span>
         <span class="deconnexion" >
