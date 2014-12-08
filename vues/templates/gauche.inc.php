@@ -12,7 +12,7 @@
             echo "<li class='bouton_menu'><a href='./index.php' >Accueil</a></li>";
             echo "<li class='bouton_menu'><a href=\".?controleur=enseignant&action=afficherLesEnseignants\">Enseignants</a></li>";
             echo "<li class='bouton_menu'><a href=\".?controleur=filiere&action=afficherLesFilieres\">Filières</a></li>";
-            echo "<li class='bouton_menu'><a href=\".?controleur=utilisateur&action=afficherEntreprise\">Classes</a></li>";
+            echo "<li class='bouton_menu'><a href=\".?controleur=classe&action=afficherLesClasses\">Classes</a></li>";
             echo "<li class='bouton_menu'><a href=\".?controleur=eleve&action=afficherLesEleves\">Elèves</a></li>";
             echo "<h2>Utilisateur : <i>" . $this->lireDonnee('loginAuthentification') . "</i></h2>";
         } else {
