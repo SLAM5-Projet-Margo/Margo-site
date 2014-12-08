@@ -12,7 +12,7 @@
         </span>
         <span class="deconnexion" >
             <a href=".?controleur=connexion&action=seDeconnecter">
-                <img src="../vues/images/exit.png" style="width:30px; height:30px;" alt="" />Déconnexion
+                <img src="../vues/images/lock.png" style="width:30px; height:30px;" alt="" />Déconnexion
             </a>
         </span>
 
