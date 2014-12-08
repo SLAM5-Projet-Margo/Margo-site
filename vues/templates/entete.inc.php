@@ -7,12 +7,12 @@
         ?>
         <span class="myAccount" >
             <a href=".?controleur=gestionDeCompte&action=informationsMonCompte">
-                <img src="../vues/images/info.png" style="width:30px; height:30px;" alt="" />Mon Compte
+                <img src="../vues/images/info-2-32.png" style="width:32px; height:32px;" alt="" />Mon Compte
             </a>
         </span>
         <span class="deconnexion" >
             <a href=".?controleur=connexion&action=seDeconnecter">
-                <img src="../vues/images/lock.png" style="width:30px; height:30px;" alt="" />Déconnexion
+                <img src="../vues/images/private-32.png" style="width:32px; height:32px;" alt="" />Déconnexion
             </a>
         </span>
 
