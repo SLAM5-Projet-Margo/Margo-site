@@ -10,7 +10,7 @@
         if (!is_null($this->lireDonnee('loginAuthentification'))) {
             //menu de gauche présent pour tous les utilisateurs
             echo "<li class='bouton_menu'><a href='./index.php' >Accueil</a></li>";
-            echo "<li class='bouton_menu'><a href=\".?controleur=utilisateur&action=coordonnees\">Enseignants</a></li>";
+            echo "<li class='bouton_menu'><a href=\".?controleur=enseignant&action=afficherLesEnseignants\">Enseignants</a></li>";
             echo "<li class='bouton_menu'><a href=\".?controleur=utilisateur&action=afficherEntreprise\">Filières</a></li>";
             echo "<li class='bouton_menu'><a href=\".?controleur=utilisateur&action=afficherEntreprise\">Classes</a></li>";
             echo "<li class='bouton_menu'><a href=\".?controleur=utilisateur&action=afficherEntreprise\">Elèves</a></li>";

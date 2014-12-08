@@ -28,7 +28,6 @@ class C_GestionDeCompte {
         // ... depuis la BDD       
         $daoPers = new M_DaoPersonne();
         $daoPers->connecter();
-        $pdo = $daoPers->getPdo();
         $perso = $daoPers->getOneByLogin(MaSession::get('login'));
         
         $this->vue->ecrireDonnee("infoPerso",$perso);

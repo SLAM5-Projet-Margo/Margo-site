@@ -13,18 +13,19 @@
  */
 class C_Enseignant extends C_ControleurGenerique {
     
-    function defaut() {
+    function afficherLesEnseignants() {
         // les fichiers
         $this->vue = new V_Vue("../vues/templates/template.inc.php");
         $this->vue->ecrireDonnee('centre',"../vues/includes/enseignant/centreListeEnseignant.inc.php");
         // les données
         $this->vue->ecrireDonnee('titreVue',"MARGO : Enseignants");
         $this->vue->ecrireDonnee('loginAuthentification',MaSession::get('login'));
-        $this->vue->afficher();
         
         $daoPers = new M_DaoPersonne();
         $daoPers->connecter();
-        $utilisateur = $daoPers->getEnseignant();
-        $this->vue->ecrireDonnee('listeEnseignant',$utilisateur);
+        $perso = $daoPers->getEnseignant();
+        
+        $this->vue->ecrireDonnee("listeEnseignant",$perso);
+        $this->vue->afficher();
     }
 }
