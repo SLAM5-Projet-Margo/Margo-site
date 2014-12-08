@@ -1,0 +1,215 @@
+body { 
+    margin: 0pt;
+    padding: 0pt;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 0.8em;
+}
+
+
+#global{
+    margin-bottom:0;
+    background-color: #383838;
+    width: 100%;
+    float:left;
+}
+
+#entete{
+    color: white;
+    width:100%;
+    height:100px;
+    float:left;
+    text-align: left;
+}
+
+span.deconnexion{
+    font-size: 20px;
+    float:right;
+    margin-right:50px;
+    margin-top:-60px;
+}
+
+span.deconnexion a{
+    color:white;
+}
+
+span.myAccount a{
+    color:white;
+}
+
+span.myAccount{
+    font-size: 20px;
+    float:right;
+    width: 180px;
+    margin-right:220px;
+    margin-top:-60px;
+    border-right: solid 4px white;
+}
+
+#footer{
+    color:white;
+    width:100%;
+    height:70px;
+    float:left;
+    text-align: left;
+    margin-top:0px;
+}
+
+p.footer{
+    font-size:14px;
+}
+
+
+section{
+    box-shadow: -3px 0px 10px 5px #202020 ;
+    background-color: white;
+    float: right;
+    width: 84.9%;
+    border-top: solid 2px #000000;
+    border-left: solid 2px #000000;
+    border-bottom: solid 2px #000000;
+    height:100%;
+}
+
+#titreSection{
+    margin-bottom:20px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-right:10px;
+    padding-bottom: 4px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color:#202020 ;
+    border-bottom: solid 3px #00CCFF;
+    outline: 5px solid #202020;
+}
+
+#introAccueil{
+    font-size: 25px;
+    text-align: center;
+}
+
+h1{
+    font-size: 30px;
+}
+h1#Titreappli{
+    font-size: 2.5em;
+    padding-left: 11px;
+}
+
+nav{
+    float: left;
+    height: 100%;
+    width: 15%;
+    float: left;
+    text-align: left;
+    
+}
+
+#gauche{
+    background-color: white;
+    color: black;
+    border: solid 2px #000000;
+    min-width:150px;
+    width: 75%;
+    margin-left:12.5%;
+    margin-top: 10%;
+}
+
+
+nav ul{
+    list-style-type: none;
+     padding-left: 20px;
+     padding-right: 20px;
+}
+
+nav li{
+    display: block;
+    margin-right: 15px;
+    padding-bottom: 5px;
+}
+
+li{
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+nav a{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #4BB5C1;
+    
+}
+
+form {
+	overflow: hidden;
+	clear: both;
+}
+label{
+	clear: left;
+	float: left;
+	width: 100px;
+	padding-right: 2%;
+	height: 1em;
+	margin-bottom: 10px;
+}
+input,select{
+	float: left;	
+	margin-bottom: 15px;
+}
+
+
+/*bordure des champs de connection*/
+fieldset{
+    border: solid 2px #282828;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    
+}
+
+#Formulaire_Info_Connexion{
+    width: 600px;
+    margin: auto;
+}
+
+#Formulaire_Info_Perso{
+    width: 600px;
+    margin: auto;
+}
+
+#fieldSeConnecter{
+    border: none;
+    width:500px;
+    margin: auto;
+}
+
+#editInfoPerso{
+    width: 700px;
+    padding-top:50px;
+    padding-bottom:50px;
+    font-size:20px;
+}
+
+form{
+    box-shadow: 1px 1px 10px grey inset;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-left:30px;
+    margin-right:30px;
+    margin-top: 30px;
+    padding:12px;
+    margin: auto;
+}
+
+#formSeConnecter{
+    width: 600px;
+    padding: 20px;
+}
+
