@@ -21,11 +21,16 @@ body {
     text-align: left;
 }
 
+span.deconnexion img{
+    position:absolute;
+    margin-left:-38px;
+}
+
 span.deconnexion{
     font-size: 20px;
     float:right;
     margin-right:50px;
-    margin-top:-60px;
+    margin-top:-55px;
 }
 
 span.deconnexion a{
@@ -36,12 +41,18 @@ span.myAccount a{
     color:white;
 }
 
+span.myAccount img{
+    position:absolute;
+    margin-left:-38px;
+}
+
 span.myAccount{
     font-size: 20px;
     float:right;
-    width: 180px;
+    width: 150px;
+    height:30px;
     margin-right:220px;
-    margin-top:-60px;
+    margin-top:-55px;
     border-right: solid 4px white;
 }
 
@@ -196,6 +207,17 @@ fieldset{
     padding-bottom:50px;
     font-size:20px;
 }
+
+#editInfoPerso p{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:50px
+}
+
+#underline{
+    border-bottom:solid 2px #00CCFF;
+}
+
 
 form{
     box-shadow: 1px 1px 10px grey inset;

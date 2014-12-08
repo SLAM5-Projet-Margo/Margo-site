@@ -6,24 +6,28 @@
     <div id="Formulaire_Info_Connexion">
         <fieldset>
             <legend>Informations de connexion</legend>
-            <?php
-            echo $this->lireDonnee('infoPerso')->getLogin().'<br />';
-            echo $this->lireDonnee('infoPerso')->getMdp().'<br />';
-            echo $this->lireDonnee('infoPerso')->getMail().'<br />';
-            ?>
+            <p>
+                <?php
+                echo '<span id="underline">'.$this->lireDonnee('infoPerso')->getLogin().'</span><br />';
+                echo '<span id="underline">'.$this->lireDonnee('infoPerso')->getMdp().'</span><br />';
+                echo '<span id="underline">'.$this->lireDonnee('infoPerso')->getMail().'</span><br />';
+                ?>
+            </p>
 
         </fieldset>
     </div>
     <div id="Formulaire_Info_Perso">
         <fieldset>
             <legend>Informations personnelles</legend>
-            <?php
-            echo $this->lireDonnee('infoPerso')->getCivilite().'<br />';
-            echo $this->lireDonnee('infoPerso')->getNom().'<br />';
-            echo $this->lireDonnee('infoPerso')->getPrenom().'<br />';
-            echo $this->lireDonnee('infoPerso')->getNumTel().'<br />';
-            echo $this->lireDonnee('infoPerso')->getMobile();
-            ?>
+            <p>
+                <?php
+                echo '<span id="underline">'.$this->lireDonnee('infoPerso')->getCivilite().'</span><br />';
+                echo '<span id="underline">'.$this->lireDonnee('infoPerso')->getNom().'</span><br />';
+                echo '<span id="underline">'.$this->lireDonnee('infoPerso')->getPrenom().'</span><br />';
+                echo '<span id="underline">'.$this->lireDonnee('infoPerso')->getNumTel().'</span><br />';
+                echo '<span id="underline">'.$this->lireDonnee('infoPerso')->getMobile().'</span>';
+                ?>
+            </p>
 
         </fieldset>
     </div>
