@@ -7,26 +7,26 @@
  */
 
 /**
- * Description of C_Enseignant
+ * Description of C_Eleve
  *
  * @author kbouchet
  */
-class C_Enseignant extends C_ControleurGenerique {
+class C_Eleve extends C_ControleurGenerique {
     
-    function afficherLesEnseignants() {
+    function afficherLesEleves() {
         // les fichiers
         $this->vue = new V_Vue("../vues/templates/template.inc.php");
-        $this->vue->ecrireDonnee('centre',"../vues/includes/enseignant/centreListeEnseignant.inc.php");
+        $this->vue->ecrireDonnee('centre',"../vues/includes/eleve/centreListeEleve.inc.php");
         // les données
-        $this->vue->ecrireDonnee('titreVue',"MARGO : Enseignants");
-        $this->vue->ecrireDonnee("titreSection","Liste des enseignants");
+        $this->vue->ecrireDonnee('titreVue',"MARGO : Elèves");
+        $this->vue->ecrireDonnee("titreSection","Liste des élèves");
         $this->vue->ecrireDonnee('loginAuthentification',MaSession::get('login'));
         
         $daoPers = new M_DaoPersonne();
         $daoPers->connecter();
-        $perso = $daoPers->getEnseignant();
+        $perso = $daoPers->getEleve();
         
-        $this->vue->ecrireDonnee("listeEnseignant",$perso);
+        $this->vue->ecrireDonnee("listeEleve",$perso);
         $this->vue->afficher();
     }
 }

@@ -7,26 +7,29 @@
  */
 
 /**
- * Description of C_Enseignant
+ * Description of C_Filiere
  *
  * @author kbouchet
  */
-class C_Enseignant extends C_ControleurGenerique {
+class C_Filiere extends C_ControleurGenerique {
     
-    function afficherLesEnseignants() {
+    function afficherLesFilieres() {
         // les fichiers
         $this->vue = new V_Vue("../vues/templates/template.inc.php");
-        $this->vue->ecrireDonnee('centre',"../vues/includes/enseignant/centreListeEnseignant.inc.php");
+        $this->vue->ecrireDonnee('centre',"../vues/includes/filiere/centreListeFiliere.inc.php");
         // les données
-        $this->vue->ecrireDonnee('titreVue',"MARGO : Enseignants");
-        $this->vue->ecrireDonnee("titreSection","Liste des enseignants");
+        $this->vue->ecrireDonnee('titreVue',"MARGO : Filières");
+        $this->vue->ecrireDonnee("titreSection","Liste des filières");
         $this->vue->ecrireDonnee('loginAuthentification',MaSession::get('login'));
         
         $daoPers = new M_DaoPersonne();
         $daoPers->connecter();
-        $perso = $daoPers->getEnseignant();
+        $pdo = $daoPers->getPdo();
         
-        $this->vue->ecrireDonnee("listeEnseignant",$perso);
+        $daoFiliere = new M_DaoFiliere();
+        $daoFiliere->setPdo($pdo);
+        $this->vue->ecrireDonnee('lesFiliere', $daoFiliere->getAll());
+        
         $this->vue->afficher();
     }
 }
