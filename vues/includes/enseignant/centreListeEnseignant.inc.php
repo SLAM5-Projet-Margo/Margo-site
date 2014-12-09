@@ -4,7 +4,7 @@ $ListeEnseignant = $this->lireDonnee('listeEnseignant');
 echo "<div id='titreSection'><h1>".$this->lireDonnee('titreSection')."</h1></div>";
 ?>
     <fieldset id="fieldsetTab">    
-        <a href="?controleur=enseignant&action=afficherLesEnseignants"><img src="../vues/images/add-list-32.png" style="width:32px; height:32px;" alt="" /></a>
+        <a href="?controleur=enseignant&action=formulaireAjoutEnseignant"><img src="../vues/images/add-list-32.png" style="width:32px; height:32px;" alt="" /></a>
         <legend>Liste des Enseignants</legend>
         <table id ="tab" border='1'>
             <tr>
@@ -19,7 +19,7 @@ echo "<div id='titreSection'><h1>".$this->lireDonnee('titreSection')."</h1></div
                             . '<td>'.$unEnseignant->getNom().'</td>'
                             . '<td>'.$unEnseignant->getPrenom().'</td>'
                             . '<td>'.$unEnseignant->getMail().'</td>'
-                            . '<td><a href="?controleur=enseignant&action=afficherLesEnseignants"><img src="../vues/images/error-6-32.png" style="width:32px; height:32px;" alt="" /></a></td>'
+                            . '<td><a href="?controleur=enseignant&action=formulaireSuppressionEnseignant&id='.$unEnseignant->getId().'"><img src="../vues/images/error-6-32.png" style="width:32px; height:32px;" alt="" /></a></td>'
                         .'</tr>';
                 }
             ?>
