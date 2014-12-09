@@ -13,7 +13,7 @@
                 <?php
                 echo '<label for="txtMail"><span id="underline">'.$this->lireDonnee('infoPerso')->getMail().'</span></label>';
                 ?>
-                <div class='valeurModifier'><input type="text" size="30" maxlength="30" id="id_mail" name="txtMail" value='Email' onblur="if(this.value=='')this.value='Email'" onclick="if(this.value=='Email')this.value=''"/></div><br />
+                <div class='valeurModifier'><input type="text" size="25" maxlength="30" id="id_mail" name="txtMail" value='Email' onblur="if(this.value=='')this.value='Email'" onclick="if(this.value=='Email')this.value=''"/></div><br />
             </p>
 
         </fieldset>

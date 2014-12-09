@@ -19,6 +19,9 @@ SET time_zone = "+00:00";
 --
 -- Base de données: `margo`
 --
+DROP DATABASE `margo`;
+CREATE DATABASE `margo` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `margo`;
 
 -- --------------------------------------------------------
 
