@@ -122,7 +122,7 @@ INSERT INTO `PERSONNE` (`IDPERSONNE`, `IDROLE`, `CIVILITE`, `NOM`, `PRENOM`, `NU
 (2, 4, 'Mr', 'DEMARLY', 'thomas', '0600000000', 'tdemarl@gmail.com', '0600000000', 'tdemarly', 'ff289fa7cd0ed8339f20a43fa5f032d32fedd1d8'),
 (13, 5, 'Monsieur', 'Jobs', 'Steve', '0000000000', 'test1@gmail.com', '', 'etudiant', '2df87b6c0bfbdb58b91c7a50ac9ca42b086db583'),
 (14, 3, 'Monsieur', 'Beauvais', 'Jean pierre', '0000000000', 'test@mail.fr', '0000000000', 'test', '51abb9636078defbf888d8457a7c76f85c8f114c'),
-(16, 4, 'Monsieur', 'Goulet', 'Jerome', '0251745362', 'gg@live.fr', '0685635853', 'jerome', 'gouletgg');
+(16, 4, 'Monsieur', 'Bouchet', 'Kevin', '0000000000', 'enseignant@live.fr', '0685635853', 'enseignant', '895a0cf6ba52053acfc853c78983eb5f6919e111');
 
 -- --------------------------------------------------------
 
