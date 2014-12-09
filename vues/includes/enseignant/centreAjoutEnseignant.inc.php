@@ -55,6 +55,7 @@ echo "<div id='titreSection'><h1>".$this->lireDonnee('titreSection')."</h1></div
                     <input type="button" id="button-precedent" value="Précédent" onclick="return etapePrecedent()" disabled>
                     <input type="button" id="button-suivant" value="Suivant" onclick="return valider()">
                     <input type="submit" id="button-creer" value="Creer" onclick="return valideI()" disabled></input>
+                    <input style="float:right" type="button" value="Annuler" onclick="history.back(-1)" />
                 <!-- OnClick éxécutera le JS qui testera tout les champ du formulaire. -->
                 </fieldset>
             </div>
