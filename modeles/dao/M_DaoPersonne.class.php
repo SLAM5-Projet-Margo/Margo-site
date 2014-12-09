@@ -293,6 +293,23 @@ class M_DaoPersonne extends M_DaoGenerique {
         return $retour;
     }
     
+    function delete($idMetier) {
+        $retour = FALSE;
+        try {
+            // Requête textuelle paramétrée (paramètres nommés)
+            $sql = "DELETE FROM $this->nomTable ";
+            $sql .= "WHERE IDPERSONNE = $idMetier";
+//            var_dump($sql);
+            // préparer la requête PDO
+            $queryPrepare = $this->pdo->prepare($sql);
+            // exécuter la requête avec les valeurs des paramètres dans un tableau
+            $retour = $queryPrepare->execute();
+//            debug_query($sql, $parametres);
+        } catch (PDOException $e) {
+            echo get_class($this) . ' - ' . __METHOD__ . ' : ' . $e->getMessage();
+        }
+        return $retour;
+    }
 }
 
 

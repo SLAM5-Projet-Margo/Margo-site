@@ -40,6 +40,36 @@ class C_Enseignant extends C_ControleurGenerique {
         $this->vue->ecrireDonnee('loginAuthentification',MaSession::get('login'));
         
         $idProfesseur = $_GET['id'];
+        
+        $daoPers = new M_DaoPersonne();
+        $daoPers->connecter();
+        $perso = $daoPers->getOneById($idProfesseur);
+        
+        $this->vue->ecrireDonnee("unProfesseur",$perso);
+        
+        
+        $this->vue->afficher();
+    }
+    
+    function suppressionEnseignant(){
+        // les fichiers
+        $this->vue = new V_Vue("../vues/templates/template.inc.php");
+        $this->vue->ecrireDonnee('centre',"../vues/includes/enseignant/centreListeEnseignant.inc.php");
+        // les données
+        $this->vue->ecrireDonnee('titreVue',"MARGO : Enseignants");
+        $this->vue->ecrireDonnee("titreSection","Liste des enseignants");
+        $this->vue->ecrireDonnee('loginAuthentification',MaSession::get('login'));
+        
+        $idProfesseur = $_GET['id'];
+        
+        $daoPers = new M_DaoPersonne();
+        $daoPers->connecter();
+        $deletPerso = $daoPers->delete($idProfesseur);
+        
+        $perso = $daoPers->getEnseignant();
+        $this->vue->ecrireDonnee("listeEnseignant",$perso);
+        
+        
         $this->vue->afficher();
         
     }
