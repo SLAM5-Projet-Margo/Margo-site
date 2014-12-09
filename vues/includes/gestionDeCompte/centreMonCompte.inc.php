@@ -2,7 +2,7 @@
 
     echo "<div id='titreSection'><h1>".$this->lireDonnee('titreSection')."</h1></div>";
 ?>
-<form method="post" action="#" id="editInfoPerso">
+<form method="post" action="?controleur=gestionDeCompte&action=modifierInfos" id="editInfoPerso">
     <div id="Formulaire_Info_Connexion">
         <fieldset>
             <legend>Informations de connexion</legend>
@@ -30,4 +30,5 @@
 
         </fieldset>
     </div>
+    <input type="submit" value="Modifier" />
 </form>

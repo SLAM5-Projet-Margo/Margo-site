@@ -34,4 +34,21 @@ class C_GestionDeCompte {
         
         $this->vue->afficher();
     }
+     function modifierInfos() {
+        $this->vue = new V_Vue("../vues/templates/template.inc.php");
+        $this->vue->ecrireDonnee("titreVue","Margo : Mon Compte");
+        $this->vue->ecrireDonnee('centre',"../vues/includes/gestionDeCompte/modifierMonCompte.inc.php");
+        $this->vue->ecrireDonnee("titreSection","Mon Compte: Informations");
+        // Centre : formulaire de connexion
+        $this->vue->ecrireDonnee('loginAuthentification',MaSession::get('login'));  
+        
+        // ... depuis la BDD       
+        $daoPers = new M_DaoPersonne();
+        $daoPers->connecter();
+        $perso = $daoPers->getOneByLogin(MaSession::get('login'));
+        
+        $this->vue->ecrireDonnee("infoPerso",$perso);
+        
+        $this->vue->afficher();
+     }
 }
